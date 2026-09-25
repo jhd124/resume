@@ -1,112 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>荆宏达｜前端开发工程师简历</title>
   <style>
-    .article{
-      line-height: 1.8;
-      padding: 0 20px;
+    :root { color-scheme: light; --ink: #243044; --muted: #667085; --accent: #315e73; --line: #dce3e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #eef1f4; color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; font-size: 14px; line-height: 1.75; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .article { max-width: 900px; margin: 40px auto; padding: 44px 52px; background: #fff; box-shadow: 0 8px 40px #2430440c; }
+    header { padding-bottom: 22px; border-bottom: 2px solid var(--accent); }
+    h1, h2, h3 { margin: 0; color: #172b3a; }
+    h1 { font-size: 30px; line-height: 1.35; letter-spacing: 2px; }
+    .role { display: inline-block; margin-left: 14px; font-size: 17px; font-weight: 500; letter-spacing: 0; color: var(--accent); }
+    h2 { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 17px; letter-spacing: 1.5px; }
+    h2::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+    h3 { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 9px; font-size: 16px; line-height: 1.5; }
+    .date { color: var(--muted); font-size: 12px; font-weight: 400; letter-spacing: 0; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .row { display: flex; flex-wrap: wrap; gap: 6px 24px; margin-top: 12px; color: var(--muted); font-size: 13px; }
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    .big-section { margin-top: 23px; }
+    .item { margin-top: 5px; }
+    .row .item { margin: 0; }
+    .content { min-width: 0; }
+    .section + .section { margin-top: 23px; padding-top: 19px; border-top: 1px solid var(--line); }
+    .label { font-weight: 600; color: #344054; }
+    ul { margin: 4px 0 8px; padding-left: 20px; }
+    li { margin: 3px 0; padding-left: 2px; }
+    li::marker { color: var(--accent); font-size: 0.85em; }
+    .entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 18px; padding: 7px 0; }
+    .entry + .entry { border-top: 1px solid #edf0f3; }
+    .entry-title { font-weight: 600; }
+    .entry-detail { grid-column: 1; color: var(--muted); font-size: 13px; }
+    @media (max-width: 640px) {
+      body { font-size: 14px; background: #fff; }
+      .article { margin: 0; padding: 28px 22px; box-shadow: none; }
+      h1 { font-size: 27px; }
+      .role { display: block; margin: 7px 0 0; font-size: 16px; }
+      h3 { flex-wrap: wrap; gap: 3px 12px; }
+      .entry { grid-template-columns: 1fr; gap: 2px; }
+      .entry .date { grid-row: 3; }
+      .row { gap: 4px 20px; }
     }
-    h1{
-      font-weight: bold;
-      margin: 0;
-      font-size: 20px;
-    }
-    h3{
-      font-weight: bold;
-      margin: 0;
-      font-size: 18px;
-    }
-    ul{
-      margin: 0;
-    }
-    hr {
-      display: block;
-      height: 1px;
-      border: 0;
-      border-top: 1px solid #ccc;
-      margin: 1em 0;
-      padding: 0;
-    }
-    .date{
-      color: #646A73
-
-    }
-    .row {
-      display: flex;
-      gap: 16px;
-    }
-    .contact {
-      color: #646A73
-    }
-    .section {
-      margin-top: 12px;
-    }
-    .item{
-      margin-top: 6px;
-    }
-    .content{
-      padding-left: 16px;
-    }
-    .big-section{
-      padding: 0 10px 10px 10px;
+    @page { size: A4; margin: 13mm 15mm; }
+    @media print {
+      body { background: #fff; font-size: 10pt; line-height: 1.55; }
+      .article { max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      header { padding-bottom: 12px; }
+      h1 { font-size: 23pt; }
+      .role { font-size: 12pt; }
+      h2 { font-size: 12pt; margin-bottom: 7px; }
+      h3 { font-size: 11pt; }
+      .big-section { margin-top: 15px; }
+      .section + .section { margin-top: 15px; padding-top: 12px; }
+      .entry { padding: 4px 0; }
+      .item, li { margin-top: 3px; }
+      h2, h3 { break-after: avoid; }
+      .entry, li { break-inside: avoid; }
+      p, li, .item { orphans: 2; widows: 2; }
+      a { color: inherit; }
     }
   </style>
 </head>
 <body>
   <article class="article">
     <header>
-      <h1>荆宏达 - 前端开发工程师</h1>
+      <h1>荆宏达<span class="role">前端开发工程师</span></h1>
       <div class="row">
         <div class="item">电话：<a class="contact" href="tel:18610935679">18610935679</a></div>
-        <div class="item">邮箱：<a class="contact" href="mailto:jhd124@hotmail">jhd124@hotmail.com</a></div>
+        <div class="item">邮箱：<a class="contact" href="mailto:jhd124@hotmail.com">jhd124@hotmail.com</a></div>
       </div>
-      <hr/>
+
+    </header>
       <section class="big-section">
-        <h1>教育经历</h1>
+        <h2>教育经历</h2>
         <div class="content">
-        <div class="item">本科：西安交通大学 <span class="date">2010.8-2014.8</span>，飞行器设计与工程专业</div>
-        <div class="item">硕士：中国民航大学 <span class="date">2015.8-2018.8</span>，飞机制造工程</div>
+        <div class="entry"><span class="entry-title">西安交通大学</span><span class="date">2010.08 — 2014.08</span><span class="entry-detail">本科 · 飞行器设计与工程专业</span></div>
+        <div class="entry"><span class="entry-title">中国民航大学</span><span class="date">2015.08 — 2018.08</span><span class="entry-detail">硕士 · 飞机制造工程</span></div>
         </div>
       </section>
-      <hr/><section class="big-section">
-        <h1>技能</h1>
+<section class="big-section">
+        <h2>技能</h2>
         <div class="content">
         <div class="item">熟练掌握JS、TS、CSS、HTML</div>
         <div class="item">熟练掌握React (6年经验)；熟练掌握小程序 (3年经验)； 能进行Vue开发 (2年项目维护经验)</div>
         <div class="item">熟练使用Codex等coding agent进行开发</div>
         </div>
       </section>
-      <hr/>
+
       <section class="big-section">
-        <h1>工作经历</h1>
+        <h2>工作经历</h2>
         <div class="content">
-          <div class="item">北京深势科技有限公司 2023.12 - 2026.9 前端开发工程师</div>
-          <div class="item">北京字节跳动网络科技有限公司 2020.9 - 2023.10 前端开发工程师</div>
-          <div class="item">北京小砖科技有限公司 2017.9-2020.8 前端开发工程师，前端Leader（4人团队）</div>
+          <div class="entry"><span class="entry-title">北京深势科技有限公司</span><span class="date">2023.12 — 2026.09</span><span class="entry-detail">前端开发工程师</span></div>
+          <div class="entry"><span class="entry-title">北京字节跳动网络科技有限公司</span><span class="date">2020.09 — 2023.10</span><span class="entry-detail">前端开发工程师</span></div>
+          <div class="entry"><span class="entry-title">北京小砖科技有限公司</span><span class="date">2017.09 — 2020.08</span><span class="entry-detail">前端开发工程师，前端Leader（4人团队）</span></div>
         </div>
         
       </section>
-      <hr/>
+
       <section class="big-section">
         
-        <h1>项目经历</h1>
+        <h2>项目经历</h2>
         <div class="content">
           <div class="section">
               <section>
-                <h3>玻尔科研平台<span class="date">2024.10 - 2026.9</span></h3>
+                <h3>玻尔科研平台<span class="date">2024.10 — 2026.09</span></h3>
                 <div class="content">
                   <div class="item">
-                    背景：玻尔是一个面向科研人员的平台应用，用户可以在平台上检索/管理文献、AI问答、创建应用、进行科学计算、查询专业数据、进行授课/听课、发布/阅读notebook等一系列科研活动
+                    <span class="label">背景：</span>玻尔是一个面向科研人员的平台应用，用户可以在平台上检索/管理文献、AI问答、创建应用、进行科学计算、查询专业数据、进行授课/听课、发布/阅读notebook等一系列科研活动
                   </div>
                   <div class="item">
-                    访问项目：https://www.bohrium.com
+                    <span class="label">访问项目：</span><a href="https://www.bohrium.com">www.bohrium.com</a>
                   </div>
-                  <div class="item">技术栈：PC web (React，Typescript)</div>
-                  <div class="item">职责：参与项目的开发、维护、保证项目质量</div>
-                  <div class="item">行动：<ul>
+                  <div class="item"><span class="label">技术栈：</span>PC web (React，Typescript)</div>
+                  <div class="item"><span class="label">职责：</span>参与项目的开发、维护、保证项目质量</div>
+                  <div class="item"><span class="label">行动：</span><ul>
                       <li>高质量完成项目中文献搜索、材料数据库、课程、登录、AI agent等功能的开发</li>
                       <li>完成了产品Design system的规范建设</li>
                       <li>独立完成了前端组建库和图标库的建设，以及对应mcp工具，设计稿转组件服务，design token转代码服务的建设</li>
@@ -114,7 +124,7 @@
                       <li>开发工具给项目提效，包括给运营用的低代码搭建工具</li>
                     </ul>
                   </div>
-                  <div class="item">成果：<ul>
+                  <div class="item"><span class="label">成果：</span><ul>
                       <li>项目需求按时高质量上线，无阻塞性Bug</li>
                       <li>运营可以自行搭建配置多数活动页面，无需研发介入</li>
                       <li>首页和登陆页面的FCP优化到1s内，css文件的体积减少90%，项目构建时间从40分钟以上优化到10分钟以内</li>
@@ -130,19 +140,21 @@
                 <h3>飞书审批<span class="date">2021.10</span></h3>
                 <div class="content">
                   <div class="item">
-                    背景：提供一个审批平台，用无代码渲染的方式，将公司内散落各处的业务审批收口到一处
+                    <span class="label">背景：</span>提供一个审批平台，用无代码渲染的方式，将公司内散落各处的业务审批收口到一处
                   </div>
                   <div class="item">
-                    项目访问：打开飞书 -> 工作台 -> 审批
+                    <span class="label">项目访问：</span>打开飞书 -> 工作台 -> 审批
                   </div>
-                  <div class="item">技术栈：PC web (React，Typescript)、小程序（Typescript）</div>
-                  <div class="item">职责：参与项目的开发、维护、协助业务接入、保证项目质量</div>
-                  <div class="item">行动：<ul>
-                      <li>高质量完成项目中全文评论、审批操作、一系列迭代功能的开发工作
-                      <li>参与代码review，推动单元测试落地
-                      <li>主持2个业务，协助3个业务接入平台
-                      <li>每周主持项目版本发布</div>
-                  <div class="item">成果：<ul>
+                  <div class="item"><span class="label">技术栈：</span>PC web (React，Typescript)、小程序（Typescript）</div>
+                  <div class="item"><span class="label">职责：</span>参与项目的开发、维护、协助业务接入、保证项目质量</div>
+                  <div class="item"><span class="label">行动：</span><ul>
+                      <li>高质量完成项目中全文评论、审批操作、一系列迭代功能的开发工作</li>
+                      <li>参与代码review，推动单元测试落地</li>
+                      <li>主持2个业务，协助3个业务接入平台</li>
+                      <li>每周主持项目版本发布</li>
+                    </ul>
+                  </div>
+                  <div class="item"><span class="label">成果：</span><ul>
                       <li>项目如期上线，每天支持15万+用户线上审批</li>
                       <li>功能上线后无阻塞性Bug，仓库代码贡献量第一，凭借项目中的表现拿到E绩效</li>
                       <li>单测覆盖了核心模块，纯逻辑代码的增量代码覆盖率达到60%以上，多次拦截了问题代码</li>
@@ -156,31 +168,30 @@
            
               <div class="section">
                 <section>
-                  <h3>拼室友小程序 <span class="date">2018.8-2020.6</span></h3>
+                  <h3>拼室友小程序 <span class="date">2018.08 — 2020.06</span></h3>
                   <div class="content">
-                    <div class="item">背景：公司获得融资后，需要进行业务扩展，并且对产品的品质有更高的要求，我们决定开发拼室友小程序，需要前端以更好的工程质量和运行性能为目标开发新的项目</div>
-                    <div class="item">访问项目：打开微信 -> 搜索小程序“拼室友”</div>
-                    <div class="item">技术栈：小程序（JavaScript）</div>
-                    <div class="item">职责：作为前端Leader，带领4人团队完成项目开发，高品质上线，并达到预期目标，在上线后维护项目平稳运行</div>
-                    <div class="item">行动：<ul>
+                    <div class="item"><span class="label">背景：</span>公司获得融资后，需要进行业务扩展，并且对产品的品质有更高的要求，我们决定开发拼室友小程序，需要前端以更好的工程质量和运行性能为目标开发新的项目</div>
+                    <div class="item"><span class="label">访问项目：</span>打开微信 -> 搜索小程序“拼室友”</div>
+                    <div class="item"><span class="label">技术栈：</span>小程序（JavaScript）</div>
+                    <div class="item"><span class="label">职责：</span>作为前端Leader，带领4人团队完成项目开发，高品质上线，并达到预期目标，在上线后维护项目平稳运行</div>
+                    <div class="item"><span class="label">行动：</span><ul>
                         <li>从0到1完成项目开发，完成时实聊天、房源列表、预约看房、全局状态容器、网络请求模块的设计</li>
                         <li>进行code review，把控项目的代码质量</li>
                       </ul>
                     </div>
-                    <div class="item">成果：三个月时间内，和大家一起完成了三个小程序的开发，其中拼室友小程序的房东版和租客版顺利上线运行，平均日活1万</div>
+                    <div class="item"><span class="label">成果：</span>三个月时间内，和大家一起完成了三个小程序的开发，其中拼室友小程序的房东版和租客版顺利上线运行，平均日活1万</div>
                   </div>
                 </section>
               </div>
         </div>
       </section>
-      <hr/>
+
       <section class="big-section">
-        <h1>其他经历</h1>
+        <h2>其他经历</h2>
         <div class="content">
         2015.01 - 2015.03 青海三江源自然保护区志愿者
         </div>
       </section>
-    </header>
   </article>
 </body>
 </html>
