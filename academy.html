@@ -74,124 +74,88 @@
       </div>
 
     </header>
-      <section class="big-section">
-        <h2>教育经历</h2>
-        <div class="content">
+
+    <section class="big-section">
+      <h2>个人简介</h2>
+      <div class="content">前端开发工程师，具备科研平台、企业协作平台及小程序开发经验。主要使用 React、TypeScript，曾带领 4 人前端团队。关注复杂业务交付、前端性能与工程效率，具备设计系统、组件库及 AI 辅助研发工具链建设经验。</div>
+    </section>
+
+    <section class="big-section">
+      <h2>专业技能</h2>
+      <div class="content">
+        <div class="item"><span class="label">基础与框架：</span>熟练掌握 JavaScript、TypeScript、HTML、CSS；具备 6 年 React、3 年小程序开发经验，以及 2 年 Vue 项目维护经验。</div>
+        <div class="item"><span class="label">工程实践：</span>具备组件库、图标库及 Design System 建设经验，实践过前端性能优化、构建提效、单元测试及无代码工具开发。</div>
+        <div class="item"><span class="label">AI 辅助研发：</span>熟练使用 Codex 等 Coding Agent，具备 MCP 工具建设及 Figma 设计稿、Design Token 到组件代码的转换实践。</div>
+      </div>
+    </section>
+
+    <section class="big-section">
+      <h2>工作经历</h2>
+      <div class="content">
+        <div class="entry"><span class="entry-title">北京深势科技有限公司</span><span class="date">2023.12 — 2026.09</span><span class="entry-detail">前端开发工程师</span></div>
+        <div class="entry"><span class="entry-title">北京字节跳动网络科技有限公司</span><span class="date">2020.09 — 2023.10</span><span class="entry-detail">前端开发工程师</span></div>
+        <div class="entry"><span class="entry-title">北京小砖科技有限公司</span><span class="date">2017.09 — 2020.08</span><span class="entry-detail">前端开发工程师，前端 Leader（4 人团队）</span></div>
+      </div>
+    </section>
+
+    <section class="big-section">
+      <h2>项目经历</h2>
+      <div class="content">
+        <section class="section">
+          <h3>玻尔科研平台<span class="date">2024.10 — 2026.09</span></h3>
+          <div class="item"><span class="label">项目背景：</span>面向科研人员的一站式科研平台，覆盖文献检索与管理、AI 问答、科学计算及科研应用等场景。</div>
+          <div class="item"><span class="label">技术栈：</span>React、TypeScript（PC Web）</div>
+          <div class="item"><span class="label">项目访问：</span><a href="https://www.bohrium.com">www.bohrium.com</a></div>
+          <ul>
+            <li><span class="label">用户登录系统：</span>参与平台用户登录系统的开发与维护，并优化登录页加载性能，将首次内容绘制（FCP）优化至 1 秒以内。</li>
+            <li><span class="label">业务交付：</span>参与文献搜索、材料数据库、课程及 AI Agent 等功能的开发与维护，按时完成需求上线。</li>
+            <li><span class="label">设计系统与工具链：</span>完成产品 Design System 规范建设，独立建设前端组件库、图标库及配套 MCP 工具，开发设计稿转组件、Design Token 转代码服务，支持设计师将 Figma 图标、设计稿与组件样式同步至组件库代码。</li>
+            <li><span class="label">UI 质量：</span>通过组件库与配套 MCP 工具建设，推动 UI 走查问题数量从 3.32 个／人天下降至 1.27 个／人天，减少前端与设计师的返工成本。</li>
+            <li><span class="label">稳定性与性能：</span>独立排查并解决网站随机页面白屏问题，推动 CDN 升级 HTTP/2、修复 gzip 压缩不生效问题，清理冗余 CSS；首页 FCP 优化至 1 秒以内，CSS 文件体积减少 90%。</li>
+            <li><span class="label">构建提效：</span>解决项目构建耗时过长问题，将构建时间从 40 分钟以上缩短至 10 分钟以内。</li>
+            <li><span class="label">运营提效：</span>开发无代码页面搭建工具，支持运营独立搭建和配置多数活动页面，减少重复研发投入。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>飞书审批<span class="date">2021.10</span></h3>
+          <div class="item"><span class="label">项目背景：</span>通过无代码渲染统一承接企业内分散的业务审批流程，平台每天支持 15 万+用户线上审批。</div>
+          <div class="item"><span class="label">技术栈：</span>React、TypeScript（PC Web）；TypeScript（小程序）</div>
+          <div class="item"><span class="label">项目访问：</span>飞书 → 工作台 → 审批</div>
+          <ul>
+            <li><span class="label">功能开发：</span>完成评论、审批操作等功能及后续迭代开发，上线后无阻塞性 Bug，凭借项目表现获得 E 绩效。</li>
+            <li><span class="label">质量建设：</span>参与 Code Review 并推动单元测试落地，覆盖核心模块，纯逻辑代码的增量测试覆盖率达到 60% 以上，多次拦截问题代码。</li>
+            <li><span class="label">业务接入：</span>负责 2 个业务、协助 3 个业务接入审批平台，支持共 5 个业务使用单据托管能力。</li>
+            <li><span class="label">版本交付：</span>负责每周版本发布，协调代码打包、QA 验收与回归，按标准流程完成迭代上线。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3>拼室友小程序<span class="date">2018.08 — 2020.06</span></h3>
+          <div class="item"><span class="label">项目背景：</span>为支持业务扩展，开发面向房东与租客的租房小程序，提供房源浏览、沟通及预约看房等能力。</div>
+          <div class="item"><span class="label">技术栈：</span>JavaScript（微信小程序）</div>
+          <div class="item"><span class="label">项目访问：</span>微信 → 搜索小程序“拼室友”</div>
+          <ul>
+            <li><span class="label">团队交付：</span>作为前端 Leader，带领 4 人团队从 0 到 1 开发项目，三个月内完成三个小程序的开发；其中拼室友房东版与租客版顺利上线，平均日活达 1 万。</li>
+            <li><span class="label">模块设计：</span>完成实时聊天、房源列表、预约看房、全局状态容器及网络请求模块的设计。</li>
+            <li><span class="label">质量与维护：</span>通过 Code Review 把控代码质量，持续维护上线项目，保障平稳运行。</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="big-section">
+      <h2>教育经历</h2>
+      <div class="content">
         <div class="entry"><span class="entry-title">西安交通大学</span><span class="date">2010.08 — 2014.08</span><span class="entry-detail">本科 · 飞行器设计与工程专业</span></div>
         <div class="entry"><span class="entry-title">中国民航大学</span><span class="date">2015.08 — 2018.08</span><span class="entry-detail">硕士 · 飞机制造工程</span></div>
-        </div>
-      </section>
-<section class="big-section">
-        <h2>技能</h2>
-        <div class="content">
-        <div class="item">熟练掌握JS、TS、CSS、HTML</div>
-        <div class="item">熟练掌握React (6年经验)；熟练掌握小程序 (3年经验)； 能进行Vue开发 (2年项目维护经验)</div>
-        <div class="item">熟练使用Codex等coding agent进行开发</div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="big-section">
-        <h2>工作经历</h2>
-        <div class="content">
-          <div class="entry"><span class="entry-title">北京深势科技有限公司</span><span class="date">2023.12 — 2026.09</span><span class="entry-detail">前端开发工程师</span></div>
-          <div class="entry"><span class="entry-title">北京字节跳动网络科技有限公司</span><span class="date">2020.09 — 2023.10</span><span class="entry-detail">前端开发工程师</span></div>
-          <div class="entry"><span class="entry-title">北京小砖科技有限公司</span><span class="date">2017.09 — 2020.08</span><span class="entry-detail">前端开发工程师，前端Leader（4人团队）</span></div>
-        </div>
-        
-      </section>
-
-      <section class="big-section">
-        
-        <h2>项目经历</h2>
-        <div class="content">
-          <div class="section">
-              <section>
-                <h3>玻尔科研平台<span class="date">2024.10 — 2026.09</span></h3>
-                <div class="content">
-                  <div class="item">
-                    <span class="label">背景：</span>玻尔是一个面向科研人员的平台应用，用户可以在平台上检索/管理文献、AI问答、创建应用、进行科学计算、查询专业数据、进行授课/听课、发布/阅读notebook等一系列科研活动
-                  </div>
-                  <div class="item">
-                    <span class="label">访问项目：</span><a href="https://www.bohrium.com">www.bohrium.com</a>
-                  </div>
-                  <div class="item"><span class="label">技术栈：</span>PC web (React，Typescript)</div>
-                  <div class="item"><span class="label">职责：</span>参与项目的开发、维护、保证项目质量</div>
-                  <div class="item"><span class="label">行动：</span><ul>
-                      <li>高质量完成项目中文献搜索、材料数据库、课程、登录、AI agent等功能的开发</li>
-                      <li>完成了产品Design system的规范建设</li>
-                      <li>独立完成了前端组建库和图标库的建设，以及对应mcp工具，设计稿转组件服务，design token转代码服务的建设</li>
-                      <li>完成本职工作之余，主动解决稳定性和性能问题：独立解决网站随机页面白屏问题，推动cdn升级http2.0，推动解决cdn gzip不生效问题，发现并解决网站携带大量css的问题，解决构建时间过长问题</li>
-                      <li>开发工具给项目提效，包括给运营用的低代码搭建工具</li>
-                    </ul>
-                  </div>
-                  <div class="item"><span class="label">成果：</span><ul>
-                      <li>项目需求按时高质量上线，无阻塞性Bug</li>
-                      <li>运营可以自行搭建配置多数活动页面，无需研发介入</li>
-                      <li>首页和登陆页面的FCP优化到1s内，css文件的体积减少90%，项目构建时间从40分钟以上优化到10分钟以内</li>
-                      <li>实现了设计师从figma直接将icon，design，组件样式同步到组件库代码的能力</li>
-                      <li>通过组件库和配套mcp工具的建设，使UI走查问题数量从3.32个问题每人天降低到1.27个问题每人天，节省了前端和设计师的时间</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            </div>
-            <div class="section">
-              <section>
-                <h3>飞书审批<span class="date">2021.10</span></h3>
-                <div class="content">
-                  <div class="item">
-                    <span class="label">背景：</span>提供一个审批平台，用无代码渲染的方式，将公司内散落各处的业务审批收口到一处
-                  </div>
-                  <div class="item">
-                    <span class="label">项目访问：</span>打开飞书 -> 工作台 -> 审批
-                  </div>
-                  <div class="item"><span class="label">技术栈：</span>PC web (React，Typescript)、小程序（Typescript）</div>
-                  <div class="item"><span class="label">职责：</span>参与项目的开发、维护、协助业务接入、保证项目质量</div>
-                  <div class="item"><span class="label">行动：</span><ul>
-                      <li>高质量完成项目中全文评论、审批操作、一系列迭代功能的开发工作</li>
-                      <li>参与代码review，推动单元测试落地</li>
-                      <li>主持2个业务，协助3个业务接入平台</li>
-                      <li>每周主持项目版本发布</li>
-                    </ul>
-                  </div>
-                  <div class="item"><span class="label">成果：</span><ul>
-                      <li>项目如期上线，每天支持15万+用户线上审批</li>
-                      <li>功能上线后无阻塞性Bug，仓库代码贡献量第一，凭借项目中的表现拿到E绩效</li>
-                      <li>单测覆盖了核心模块，纯逻辑代码的增量代码覆盖率达到60%以上，多次拦截了问题代码</li>
-                      <li>支持了5个业务顺利接入使用单据托管</li>
-                      <li>保证每周正确、准时地打包项目代码，协助QA验收回归，按标准流程将迭代发布上线</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-            </div>
-           
-              <div class="section">
-                <section>
-                  <h3>拼室友小程序 <span class="date">2018.08 — 2020.06</span></h3>
-                  <div class="content">
-                    <div class="item"><span class="label">背景：</span>公司获得融资后，需要进行业务扩展，并且对产品的品质有更高的要求，我们决定开发拼室友小程序，需要前端以更好的工程质量和运行性能为目标开发新的项目</div>
-                    <div class="item"><span class="label">访问项目：</span>打开微信 -> 搜索小程序“拼室友”</div>
-                    <div class="item"><span class="label">技术栈：</span>小程序（JavaScript）</div>
-                    <div class="item"><span class="label">职责：</span>作为前端Leader，带领4人团队完成项目开发，高品质上线，并达到预期目标，在上线后维护项目平稳运行</div>
-                    <div class="item"><span class="label">行动：</span><ul>
-                        <li>从0到1完成项目开发，完成时实聊天、房源列表、预约看房、全局状态容器、网络请求模块的设计</li>
-                        <li>进行code review，把控项目的代码质量</li>
-                      </ul>
-                    </div>
-                    <div class="item"><span class="label">成果：</span>三个月时间内，和大家一起完成了三个小程序的开发，其中拼室友小程序的房东版和租客版顺利上线运行，平均日活1万</div>
-                  </div>
-                </section>
-              </div>
-        </div>
-      </section>
-
-      <section class="big-section">
-        <h2>其他经历</h2>
-        <div class="content">
-        2015.01 - 2015.03 青海三江源自然保护区志愿者
-        </div>
-      </section>
+    <section class="big-section">
+      <h2>其他经历</h2>
+      <div class="entry"><span class="entry-title">青海三江源自然保护区志愿者</span><span class="date">2015.01 — 2015.03</span></div>
+    </section>
   </article>
 </body>
 </html>
